@@ -159,7 +159,7 @@ with col2:
 @st.cache_data
 def load_data():
     dashboard = pd.read_parquet("dashboard.parquet")
-    papers = pd.read_parquet("classified_papers.parquet")
+    papers = pd.read_parquet("classified_papers_2025.parquet")
 
     with open("topic_outputs.json") as f:
         outputs = json.load(f)
